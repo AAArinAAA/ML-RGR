@@ -19,14 +19,12 @@ if df is not None:
     list=[]
 
     for i in df.columns[:-1]:
-        a = st.slider(i,int(df[i].min()), int(math.ceil(df[i].max())),int(df[i].max()/2))
+        a = st.slider(i,int(df[i].min()), int(math.ceil(df[i].max())),int(df[i].max()))
         list.append(a)
 
     list.append(a)
     list = np.array(list).reshape(1,-1)
     list=list.tolist()
-
-    print (list)
 
     st.title("Тип модели обучения")
     model_type = st.selectbox("Выберите тип", ['Knn', 'Kmeans', 'Boosting', 'Bagging','Stacking', 'MLP' ])
