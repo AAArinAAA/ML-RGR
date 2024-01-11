@@ -15,7 +15,7 @@ if df is not None:
     st.write("---")
 
     st.title("Hazardous Prediction") 
-    
+
     list=[]
 
     for i in df.columns[:-1]:
@@ -25,6 +25,8 @@ if df is not None:
     list.append(a)
     list = np.array(list).reshape(1,-1)
     list=list.tolist()
+
+    print (list)
 
     st.title("Тип модели обучения")
     model_type = st.selectbox("Выберите тип", ['Knn', 'Kmeans', 'Boosting', 'Bagging','Stacking', 'MLP' ])
