@@ -18,7 +18,7 @@ if df is not None:
 
     list=[]
 
-    for i in 5:
+    for i in range (0, 6):
         a = st.slider(i,int(df[i].min()), int(math.ceil(df[i].max())),int(df[i].max()/2))
         list.append(a)
 
