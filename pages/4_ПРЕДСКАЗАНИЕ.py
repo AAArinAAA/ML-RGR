@@ -15,6 +15,7 @@ if df is not None:
     st.write("---")
 
     st.title("Hazardous Prediction") 
+    
     list=[]
 
     for i in df.columns[:-1]:
