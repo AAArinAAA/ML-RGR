@@ -11,14 +11,13 @@ df= pd.read_csv('Data4_preprocessed.csv')
 if df is not None:
     st.header("Датасет")
     st.dataframe(df)
-
     st.write("---")
-    st.write(df)
     st.title("Hazardous Prediction") 
 
     list=[]
 
-    for i in range (0, 6):
+    df.drop(['hazardous'], axis=1)
+    for i in df.columns[:-1]:
         a = st.slider(i,int(df[i].min()), int(math.ceil(df[i].max())),int(df[i].max()/2))
         list.append(a)
 
