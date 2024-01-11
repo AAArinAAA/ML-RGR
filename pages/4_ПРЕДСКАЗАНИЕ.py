@@ -14,8 +14,6 @@ if df is not None:
 
     st.write("---")
 
-    df = df.drop('Unnamed: 0',axis=1)
-
     st.title("Hazardous Prediction") 
     list=[]
 
