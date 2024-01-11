@@ -10,8 +10,6 @@ st.title('Информация о датасетe')
 st.header('Датасет для классификации - "Опасность космических объектов"')
 st.markdown('---')
 st.dataframe(df2)
-st.subheader('Unnamed: 0')
-st.markdown('Столбец с нумерацией')
 
 st.subheader('est_diameter_min')
 st.markdown('Минимальный расчетный диаметр в километрах')
