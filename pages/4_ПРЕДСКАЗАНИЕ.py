@@ -22,7 +22,6 @@ if df is not None:
 
     list = np.array(list).reshape(1,-1)
     list=list.tolist()
-    st.write(list)
     st.title("Тип модели обучения")
     model_type = st.selectbox("Выберите тип", ['Knn', 'Kmeans', 'Boosting', 'Bagging','Stacking', 'MLP' ])
 
